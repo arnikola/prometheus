@@ -979,7 +979,8 @@ var functions = map[string]*Function{
 	},
 	"delta": {
 		Name:       "delta",
-		ArgTypes:   []ValueType{ValueTypeMatrix},
+		Variadic:   1,
+		ArgTypes:   []ValueType{ValueTypeMatrix, ValueTypeString},
 		ReturnType: ValueTypeVector,
 		Call:       funcDelta,
 	},
@@ -1022,7 +1023,8 @@ var functions = map[string]*Function{
 	},
 	"idelta": {
 		Name:       "idelta",
-		ArgTypes:   []ValueType{ValueTypeMatrix},
+		Variadic:   1,
+		ArgTypes:   []ValueType{ValueTypeMatrix, ValueTypeString},
 		ReturnType: ValueTypeVector,
 		Call:       funcIdelta,
 	},
@@ -1034,7 +1036,8 @@ var functions = map[string]*Function{
 	},
 	"irate": {
 		Name:       "irate",
-		ArgTypes:   []ValueType{ValueTypeMatrix},
+		Variadic:   1,
+		ArgTypes:   []ValueType{ValueTypeMatrix, ValueTypeString},
 		ReturnType: ValueTypeVector,
 		Call:       funcIrate,
 	},
@@ -1109,7 +1112,8 @@ var functions = map[string]*Function{
 	},
 	"rate": {
 		Name:       "rate",
-		ArgTypes:   []ValueType{ValueTypeMatrix},
+		Variadic:   1,
+		ArgTypes:   []ValueType{ValueTypeMatrix, ValueTypeString},
 		ReturnType: ValueTypeVector,
 		Call:       funcRate,
 	},
@@ -1164,7 +1168,8 @@ var functions = map[string]*Function{
 	},
 	"sum_over_time": {
 		Name:       "sum_over_time",
-		ArgTypes:   []ValueType{ValueTypeMatrix},
+		Variadic:   1,
+		ArgTypes:   []ValueType{ValueTypeMatrix, ValueTypeString},
 		ReturnType: ValueTypeVector,
 		Call:       funcSumOverTime,
 	},
